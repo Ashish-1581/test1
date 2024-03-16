@@ -1,0 +1,275 @@
+html,
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 35px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  background-color: #8cc461;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.head {
+  width: 70%;
+  align-items: center;
+  border: 2px solid white;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 20vh;
+}
+.text {
+  color: white;
+}
+
+.cscore,
+.yscore {
+  height: 80%;
+  width: 13%;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.cscore {
+  margin-left: 45%;
+}
+.name {
+  font-size: 22px;
+  text-align: center;
+}
+.yrun,
+.crun {
+  font-size: 2em;
+  font-weight: 600;
+}
+.first {
+  display: flex;
+  align-items: center;
+}
+.scissor img {
+  height: 70px;
+}
+.play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rock,
+.paper,
+.scissor {
+  background-color: white;
+  border-radius: 50%;
+  padding: 40px;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rock {
+  border: 20px solid #0074b6;
+}
+.paper {
+  border: 20px solid #ffa943;
+}
+.scissor {
+  border: 20px solid #bd00ff;
+}
+.bar1,
+.bar2,
+.bar3 {
+  height: 30px;
+  width: 50px;
+  background-color: #000000;
+  opacity: 0.7;
+  z-index: -1;
+}
+.bar1 {
+  width: 150px;
+}
+.bar2 {
+  rotate: 50deg;
+  width: 200px;
+}
+.bar3 {
+  rotate: -50deg;
+  width: 200px;
+}
+.second {
+  display: flex;
+  gap: 40px;
+}
+.rules-btn button {
+  position: absolute;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.rules {
+  position: absolute;
+  right: 50px;
+  bottom: 80px;
+  color: white;
+  border: 8px solid white;
+  border-radius: 10px;
+  background-color: #004429;
+  width: 20%;
+  height: 45%;
+  padding: 20px;
+}
+.rules h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+ul {
+  font-size: 20px;
+}
+li {
+  margin-bottom: 15px;
+}
+.cross {
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 5px solid white;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor: pointer;
+}
+.rules {
+  display: none;
+  z-index: 1;
+}
+
+.win {
+  display: none;
+}
+.loose {
+  display: none;
+}
+.tie {
+  display: none;
+}
+.congo {
+  display: none;
+}
+.win-text {
+  color: white;
+}
+.win-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  position: relative;
+}
+.win {
+  margin-top: 170px;
+}
+.win-first button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.rule-btn {
+  position: absolute;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  right: 150px;
+  bottom: 20px;
+  cursor: pointer;
+}
+.next-btn {
+  position: absolute;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  right: 150px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.winner {
+  border: 30px solid rgb(1, 150, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px rgba(1, 149, 9, 0.612), 0 0 0 40px #4eb232;
+}
+
+.ctext {
+  top: -35px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+.loose {
+  margin-top: 170px;
+}
+.tie {
+  margin-top: 170px;
+}
+.congo button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+
+  margin-top: 100px;
+}
+.display {
+  margin-top: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.congo {
+  text-align: center;
+  height: 100vh;
+}
+.congo-text {
+  margin-top: 40px;
+  color: white;
+}
+
+.vector {
+  position: absolute;
+  bottom: 0;
+  left: 625px;
+}

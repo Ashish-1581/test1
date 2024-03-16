@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="text">
+          <h3>ROCK</h3>
+          <h3>PAPER</h3>
+          <h3>SCISSORS</h3>
+        </div>
+        <div class="cscore">
+          <div class="name">COMPUTER SCORE</div>
+          <div class="crun"></div>
+        </div>
+        <div class="yscore">
+          <div class="name">YOUR SCORE</div>
+          <div class="yrun"></div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="play">
+          <div class="first">
+            <div onclick="game('1')" class="rock">
+              <img src="./images/rock.png" alt="" />
+            </div>
+            <div class="bar1"></div>
+            <div onclick="game('2')" class="scissor">
+              <img src="./images/scissor.png" alt="" />
+            </div>
+          </div>
+          <div class="second">
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="third">
+            <div onclick="game('3')" class="paper">
+              <img src="./images/paper.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="win">
+        <div class="win-first">
+          <div class="your-choice winner"></div>
+          <div class="win-text">
+            <h5>YOU WIN</h5>
+            <p>AGAINST PC</p>
+            <button onclick="playAgain()">PLAY AGAIN</button>
+          </div>
+          <div class="computer-choice"></div>
+        </div>
+
+        <button onclick="congo()" class="next-btn">NEXT</button>
+      </div>
+
+      <div class="loose">
+        <div class="win-first">
+          <div class="your-choice"></div>
+          <div class="win-text">
+            <h5>YOU LOST</h5>
+            <p>AGAINST PC</p>
+            <button onclick="playAgain()">PLAY AGAIN</button>
+          </div>
+          <div class="computer-choice winner"></div>
+        </div>
+      </div>
+
+      <div class="tie">
+        <div class="win-first">
+          <div class="your-choice"></div>
+          <div class="win-text">
+            <h5>TIE UP</h5>
+
+            <button onclick="playAgain()">REPLAY</button>
+          </div>
+          <div class="computer-choice"></div>
+        </div>
+      </div>
+
+      <div class="congo">
+        <div class="display">
+          <img class="star" src="./images/stars.png" alt="" />
+          <img class="vector" src="./images/vector.png" alt="" />
+        </div>
+        <div class="congo-text">
+          <h1>HURRAY!!</h1>
+          <h3>YOU WON THE GAME</h3>
+        </div>
+        <button onclick="playAgain()">PLAY AGAIN</button>
+      </div>
+
+      <footer>
+        <div class="rules-btn">
+          <button onclick="showHide('1')">RULES</button>
+        </div>
+        <div class="rules">
+          <h5>Game Rules</h5>
+          <ul>
+            <li>Rock beats scissors,scissor beat paper,paper beat rock.</li>
+            <li>
+              Agree ahead of time whether you'll count off "rock,paper,scissors
+              shoot" or just"rock paper scissors.
+            </li>
+            <li>
+              Use rock,paper,scissors to settle minor decisions or simply play
+              to pass the time.
+            </li>
+            <li>
+              If both players lay down the same hand,each player lays down
+              another hand.
+            </li>
+          </ul>
+          <div onclick="showHide('0')" class="cross">x</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
